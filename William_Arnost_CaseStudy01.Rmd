@@ -5,6 +5,7 @@ author: William Arnost and Meisam Alitabarimansor
 output:
   rmdformats::readthedown:
     highlight: kate
+    keep_md: yes
 ---
 
 
