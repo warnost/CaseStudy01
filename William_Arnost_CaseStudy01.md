@@ -1,11 +1,12 @@
 ---
 title: "Case Study 01"
-date: "2019-06-25"
+date: "2019-06-26"
 author: William Arnost and Meisam Alitabarimansor
 output:
   rmdformats::readthedown:
     highlight: kate
     keep_md: yes
+    self_contained: no
 ---
 
 
@@ -317,7 +318,9 @@ missmap(combined, y.at = c(1), y.labels = c(""))
 ![](William_Arnost_CaseStudy01_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 ```r
-gg_miss_var(combined, show_pct = TRUE)
+gg_miss_var(combined, show_pct = TRUE) + labs(title = "Percent Missing by Data Field") + 
+    theme(legend.position = "none", plot.title = element_text(hjust = 0.5), 
+        axis.title.y = element_text(angle = 0, vjust = 1))
 ```
 
 ![](William_Arnost_CaseStudy01_files/figure-html/unnamed-chunk-12-2.png)<!-- -->

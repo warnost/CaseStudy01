@@ -6,6 +6,7 @@ output:
   rmdformats::readthedown:
     highlight: kate
     keep_md: yes
+    self_contained: no
 ---
 
 
@@ -121,7 +122,8 @@ The exact order depends on the procedure, sometimes it applies a sort which chan
 ## 3.   Report the number of NA's in each column.
 ```{r}
 missmap(combined,y.at=c(1),y.labels = c(''))
-gg_miss_var(combined, show_pct=TRUE)
+gg_miss_var(combined, show_pct=TRUE) + labs(title="Percent Missing by Data Field") +
+  theme(legend.position = "none",plot.title = element_text(hjust = 0.5),axis.title.y=element_text(angle=0,vjust=1))
 ```
 
 These graphs show information about missing data. The first gives a way to compare across observations and variables where the missing data is. The red lines indicate missing. We can see most of the missing data is in the IBU variable, with a few missing in ABV. The second graph shows the percent of missing data in each column.
