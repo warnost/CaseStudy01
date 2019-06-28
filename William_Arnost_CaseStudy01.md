@@ -1,7 +1,7 @@
 ---
 title: "Case Study 01"
-date: "2019-06-26"
-author: William Arnost and Meisam Alitabarimansor
+date: "2019-06-27"
+author: William Arnost and Meisam A. Mansor
 output:
   rmdformats::readthedown:
     highlight: kate
@@ -347,7 +347,7 @@ ggplot(byState[byState$State != "SD", ], aes(x = reorder(State, Median_IBU),
 
 ![](William_Arnost_CaseStudy01_files/figure-html/unnamed-chunk-13-2.png)<!-- -->
 
-These graphs show the median ABV and IBU by state. Kentucky and DC produce the beers with the highest median alchohol by volume. Maine and West Virgina have the highest median bitterness. South Dakota did not have any bitterness observations.
+These graphs show the median ABV and IBU by state. Kentucky and DC produce the beers with the highest median alchohol by volume. Maine and West Virginia have the highest median bitterness. South Dakota did not have any bitterness observations.
 
 ## 5.   Which state has the maximum alcoholic (ABV) beer? Which state has the most bitter (IBU) beer?
 
